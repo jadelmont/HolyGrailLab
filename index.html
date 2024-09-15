@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holy Grail</title>
+    <style>
+        header {
+            position: fixed;
+            top: 0;
+            width: 90%;
+            height: 100px;
+            background-color: #b8c8ea; 
+            border: 3px solid #000000; 
+            padding: 10px;
+            margin: 25px;
+        }
+
+        nav {
+            position: fixed;
+            width: 90%;
+            height: 50px;
+            background-color: #b7c9f7; 
+            top: 170px;
+            left: 35px;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 230px;
+            gap: 60px;
+        }
+
+        .articles {
+            display: flex;
+            flex-direction: column;
+            width: 50%; 
+            height: 420px; 
+        }
+
+        article {
+            flex: 1; 
+            background-color: #ced7ec; 
+            border: 5px solid #000000; 
+            margin: 0; 
+        }
+
+        aside {
+            width: 50%; 
+            height: 420px;
+            background-color: #ced7ec
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 50px;
+            background-color: #b7c9f7
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p>The header uses the <strong>fixed</strong> position property, which means it is positioned relative to the viewport. The <strong>top</strong> property is set to 0, so the header is placed at the very top of the page. The <strong>width</strong> is set to 90%, making it span most of the viewport's width, and the <strong>margin</strong> of 25px creates space around the header, ensuring it doesn't touch the edges.</p>
+    </header>
+    <nav>
+        <p>The navigation bar also uses the <strong>fixed</strong> position property, meaning it stays in place even when the page is scrolled. The <strong>top</strong> property is set to 170px, positioning it below the header, and the <strong>left</strong> property is set to 35px, moving it slightly to the right. This ensures the navigation bar is easily accessible and visually distinct from the header.</p>
+    </nav>
+    <div class="content">
+        <div class="articles">
+            <article>
+                <p>This article is part of a flex container with a <strong>flex-direction</strong> of column, meaning the articles are stacked vertically. The <strong>flex</strong> property is set to 1, allowing the article to grow and fill the available space within the container. The <strong>margin</strong> is set to 0, ensuring no extra space is added around the article.</p>
+            </article>
+            <article>
+                <p>This article follows the same positioning rules as the previous one, being part of the same flex container. The <strong>flex</strong> property allows it to adjust its size based on the available space, ensuring a consistent layout.</p>
+            </article>
+        </div>
+        <aside>
+            <p>The aside element is positioned next to the articles within the flex container. Its <strong>width</strong> is set to 50%, making it take up half of the available space, and its <strong>height</strong> is set to 420px, matching the height of the articles. This ensures a balanced and visually appealing layout.</p>
+        </aside>
+    </div>
+    <footer>
+        <p>The footer uses the <strong>fixed</strong> position property, meaning it stays at the bottom of the viewport regardless of scrolling. The <strong>bottom</strong> property is set to 0, placing it at the very bottom of the page. The <strong>width</strong> is set to 100%, making it span the entire width of the viewport, ensuring it is always visible and accessible.</p>
+    </footer>
+</body>
+</html>
